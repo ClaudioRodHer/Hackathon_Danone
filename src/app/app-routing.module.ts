@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { DailyCaloriesComponent } from './components/daily-calories/daily-calories.component';
 import { ProductsComponent } from './components/products/products.component';
+import { DailycaloriesComponent } from './components/dailycalories/dailycalories.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'daily-calories', component: DailyCaloriesComponent},
+  {path: 'daily-calories', component: DailycaloriesComponent},
   {path: 'products', component: ProductsComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
