@@ -10,13 +10,17 @@ import { ContentfulService } from 'src/app/services/contentful.service';
 export class ProductsComponent {
 
   info: any = {};
+  products: any[] = [];
   page: string = '';
 
   constructor(private infoService: ContentfulService){
 
     this.infoService.getInfo().subscribe((resp: any) => {
       this.info=resp;
-      console.log(this.info);
+      if (this.info) {
+        this.products = this.info.data.productoCollection.items;
+      }
+      console.log(this.products);
     });
 
 
