@@ -3,13 +3,13 @@
 }
 .formregister{
     display: grid;
-    width: 446px;
-    height: 571px;
+    width: 486px;
+    height: 611px;
     margin: auto;
     position: relative;
     align-content: center;
     box-shadow: 1px 17px 44px rgba(3, 2, 41, 0.07);
-border-radius: 11px;
+    border-radius: 11px;
 }
 
 .createaccount{
@@ -57,7 +57,7 @@ a{
     text-decoration: none;
 }
 #forgot-pass{
-    margin: 0 0 0 50px ;
+    margin: 0 0 0 70px ;
 
     padding-bottom: 24px;
     font-family: 'Inter',sans-serif;
