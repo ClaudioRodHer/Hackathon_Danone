@@ -81,91 +81,84 @@
 
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/02.jpg"
-                        alt="">
+                    <div class="masboton">
+                        <img class="img-mas" src="../../../assets/homepage/masboton.png" alt="boton mas">
+                    </div>
+                    <div class="cardimg">
+                        <img class="img-card" src="../../../assets/homepage/prod2.png" alt="producto1">
+                    </div>
                     <div class="card-description">
                         <div class="card-title">
-                            <h4>Descripción</h4>
+                            <p class="titulocard">Danone Azucarado x 16
+                            </p>
                         </div>
                         <div class="card-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-                                modi
-                                sunt ips.</p>
+                            <p class="carddescription">Danone's ECO reinforces and elevates the values of health and naturalness.</p>
                         </div>
                         <div class="card-link">
-                          <a href="#">Ver más</a>
+                            <p class="cardcalories">62/100 kcal</p>
                         </div>
-                </div>
+                    </div>
             </div>
                 <div class="swiper-slide">
-                    <img src="img/03.jpg"
-                    alt="">
-                <div class="card-description">
-                    <div class="card-title">
-                        <h4>Descripción</h4>
+                    <div class="masboton">
+                        <img class="img-mas" src="../../../assets/homepage/masboton.png" alt="boton mas">
                     </div>
-                    <div class="card-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-                            modi
-                            sunt ips.</p>
+                    <div class="cardimg">
+                        <img class="img-card" src="../../../assets/homepage/prod3.png" alt="producto1">
                     </div>
-                    <div class="card-link">
-                      <a href="#">Ver más</a>
+                    <div class="card-description">
+                        <div class="card-title">
+                            <p class="titulocard">Danone Original Griego Natural</p>
+                        </div>
+                        <div class="card-text">
+                            <p class="carddescription">Danone's ECO reinforces and elevates the values of health and naturalness.</p>
+                        </div>
+                        <div class="card-link">
+                            <p class="cardcalories">62/100 kcal</p>
+                        </div>
                     </div>
-                </div>
             </div>
                 <div class="swiper-slide">
-                    <img src="img/04.jpg"
-                    alt="">
-                <div class="card-description">
-                    <div class="card-title">
-                        <h4>Descripción</h4>
+                    <div class="masboton">
+                        <img class="img-mas" src="../../../assets/homepage/masboton.png" alt="boton mas">
                     </div>
-                    <div class="card-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-                            modi
-                            sunt ips.</p>
+                    <div class="cardimg">
+                        <img class="img-card" src="../../../assets/homepage/prod4.png" alt="producto1">
                     </div>
-                    <div class="card-link">
-                      <a href="#">Ver más</a>
+                    <div class="card-description">
+                        <div class="card-title">
+                            <p class="titulocard">Danone ECO Natural x 4</p>
+                        </div>
+                        <div class="card-text">
+                            <p class="carddescription">Danone's ECO reinforces and elevates the values of health and naturalness.</p>
+                        </div>
+                        <div class="card-link">
+                            <p class="cardcalories">62/100 kcal</p>
+                        </div>
                     </div>
-                </div>
             </div>
                 <div class="swiper-slide">
-                    <img src="img/05.jpg"
-                    alt="">
-                <div class="card-description">
-                    <div class="card-title">
-                        <h4>Descripción</h4>
+                    <div class="masboton">
+                        <img class="img-mas" src="../../../assets/homepage/masboton.png" alt="boton mas">
                     </div>
-                    <div class="card-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-                            modi
-                            sunt ips.</p>
+                    <div class="cardimg">
+                        <img class="img-card" src="../../../assets/homepage/prod1.png" alt="producto1">
                     </div>
-                    <div class="card-link">
-                      <a href="#">Ver más</a>
+                    <div class="card-description">
+                        <div class="card-title">
+                            <p class="titulocard">Danone ECO Natural x 4</p>
+                        </div>
+                        <div class="card-text">
+                            <p class="carddescription">Danone's ECO reinforces and elevates the values of health and naturalness.</p>
+                        </div>
+                        <div class="card-link">
+                            <p class="cardcalories">62/100 kcal</p>
+                        </div>
                     </div>
-                </div>
             </div>
                
-                <div class="swiper-slide">
-                    <img src="img/06.jpg"
-                    alt="">
-                <div class="card-description">
-                    <div class="card-title">
-                        <h4>Descripción</h4>
-                    </div>
-                    <div class="card-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
-                            modi
-                            sunt ips.</p>
-                    </div>
-                    <div class="card-link">
-                      <a href="#">Ver más</a>
-                    </div>
-                </div>
-            </div>
+                
                 </div>
        
             </div>
@@ -178,7 +171,41 @@
     <!-- Swiper JS -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script >
+        var swiper = new Swiper('.swiper-container', {
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev'
+	},
+	slidesPerView: 1,
+	spaceBetween: 10,
+	// init: false,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+
+  
+	breakpoints: {
+	  620: {
+		slidesPerView: 1,
+		spaceBetween: 20,
+	  },
+	  680: {
+		slidesPerView: 2,
+		spaceBetween: 40,
+	  },
+	  920: {
+		slidesPerView: 3,
+		spaceBetween: 40,
+	  },
+	  1240: {
+		slidesPerView: 4,
+		spaceBetween: 50,
+	  },
+	} 
+    });
+    </script>
 
 <div class="imgbeforefooter">
   <img src="../../../assets/homepage/Rectangle 1.png" alt="imagen antes del footer" id="beforefooter">
