@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    margin: 50px;
+
+}
+.cardMaxCalories {
+    width: 40%;
+    height: 750px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 15px 9px 15px -3px rgba(0,0,0,0.1),-17px 20px 15px -3px rgba(0,0,0,0.1),-13px -9px 15px -3px rgba(0,0,0,0.1); 
+}
+.titleCalories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 45px;
+    gap: 10px;
+}
+.mainTitle {
+    font-size: 46px;
+    font-weight: bolder;
+    line-height: 60px;
+    text-align: center;
+    
+    /* VioletBlue */
+    color: #324BAA;
+}
+.followQuestions {
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 31px;
+    text-align: center;
+    padding: 10px;
+    /* VioletBlue */
+    color: #324BAA;;
+}
+.caloriesRemaining {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* circle */
+
+}
+
+.caloriesNum { 
+    
+    font-size: 40px;
+    font-weight: 800;
+    /* Text  */
+    color: #030229;
+}
+.caloriesText {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* Circle de calories */
+.chartCalories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.donut {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 30px solid #0017EB;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(-25deg)
+}
+.loader2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 30px solid #5BB5E9;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(60deg);
+  
+}
+.loader3 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 30px solid #B3D3FF;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(117.86deg);
+}
+
+
+/* Checkbox */
+.comidas {
+    margin: auto;
+    margin-top: 100px;
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+}
+.dinnerColor,
+.breakfastColor,
+.lunchColor {
+    margin-right: 10px;
+}
+.foods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lunch,
+.breakfast,
+.dinner {
+    margin: 0;
+}
+.dinnerColor {
+    background-color: #0017EB;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+}
+.breakfastColor {
+    background-color:#5BB5E9;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+}
+.lunchColor {
+    background-color: #B3D3FF;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+}
+
+/* Style del apartado style */
+
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+   padding: 50px;
+
+}
+.titleInformation {
+    text-align: center;
+    margin-top: 15px;
+}
