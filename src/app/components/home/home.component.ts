@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContentfulService } from 'src/app/services/contentful.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  constructor(private infoService: ContentfulService){
+    this.infoService.getProducts();
+  }
 
 }

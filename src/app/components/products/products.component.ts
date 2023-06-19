@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ContentfulService } from 'src/app/services/contentful.service';
 
 @Component({
@@ -13,17 +14,15 @@ export class ProductsComponent {
   products: any[] = [];
   page: string = '';
 
-  constructor(private infoService: ContentfulService){
+  constructor(private infoService: ContentfulService, private router:Router){
 
-    this.infoService.getInfo().subscribe((resp: any) => {
-      this.info=resp;
-      if (this.info) {
-        this.products = this.info.data.productoCollection.items;
-      }
-      console.log(this.products);
-    });
+    this.products=this.infoService.products;
+    console.log(this.products);
 
+  }
 
+  verProducto(i: number){
+    this.router.navigate(['/product', i]);
   }
 
 }
