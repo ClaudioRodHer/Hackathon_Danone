@@ -15,12 +15,12 @@ export class ProductComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private infoService: ContentfulService){
     this.activatedRoute.params.subscribe(param => {
-      console.log(param['id']);
+      // console.log(param['id']);
       this.idProduct=param['id'];
     });
 
     this.product=this.infoService.products[this.idProduct];
-    console.log(this.product);
+    // console.log(this.product);
 
   }
 

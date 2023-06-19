@@ -17,7 +17,7 @@ export class ProductsComponent {
   constructor(private infoService: ContentfulService, private router:Router){
 
     this.products=this.infoService.products;
-    console.log(this.products);
+    // console.log(this.products);
 
   }
 
