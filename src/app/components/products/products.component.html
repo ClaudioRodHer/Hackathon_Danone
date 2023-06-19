@@ -1,1 +1,110 @@
-<p>products works!</p>
+<div class="container-fluid heigth-100">
+    <h1 class="pr-Title">All Products</h1>
+    <div class="row">
+        <div class="col-3">
+            <div class="card card-filter">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Filters</h5>
+                    <a type="button" class="btn btn-filter">Clear Filter</a>
+                    <div class="row mt-10">
+                        <div class="col-10">
+                            <strong>Category</strong>
+                        </div>
+                        <div class="col-2">
+                            <strong>^</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            ECO
+                        </div>
+                        <div class="col-3">
+                            15
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            Kids
+                        </div>
+                        <div class="col-3">
+                            45
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            Griego
+                        </div>
+                        <div class="col-3">
+                            1
+                        </div>
+                    </div>
+                    <div class="row mt-10">
+                        <div class="col-10">
+                            <strong>Filter Name</strong>
+                        </div>
+                        <div class="col-2">
+                            <strong>v</strong>
+                        </div>
+                    </div>
+                    <div class="container-fluid text-center mt-30">
+                        <div class="row">
+                            <a type="button" class="btn btn-Apply">Apply Filter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col-4">
+                    <p>Items 1-4 of 4</p>
+                </div>
+                <div class="col-8 text-end">
+                    <a type="button" class="btn btn-pagination">Sort By: <span class="strong">Rating  v</span></a>
+                    <a type="button" class="btn btn-pagination">Show: <span class="strong">10 per page v</span></a>
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="31.8389" height="32" transform="translate(0.458008)" fill="white"/>
+                  <rect x="7.32617" y="6.8999" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="7.32617" y="14.2141" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="7.32617" y="21.5283" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="14.603" y="14.2141" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="14.603" y="21.5283" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="14.603" y="6.8999" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="21.8804" y="14.2141" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="21.8804" y="21.5283" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  <rect x="21.8804" y="6.8999" width="3.54842" height="3.57143" fill="#10249F" stroke="#0A135C"/>
+                  </svg>
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="31.8389" height="32" transform="translate(0.251465)" fill="white"/>
+                    <rect x="4.7998" y="21.0286" width="9.09683" height="2.74286" fill="#85B4FF"/>
+                    <rect x="4.7998" y="8.22852" width="21.8324" height="2.74286" fill="#85B4FF"/>
+                    <rect x="4.7998" y="14.6284" width="16.3743" height="2.74286" fill="#85B4FF"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container g-4">
+                    <!-- <div class="card-columns"> -->
+                    <div class="row row-cols-4 row-cols-md-3 g-4 card-columns">
+                        <div class="card text-center" *ngFor="let product of products; let i = index">
+                            <div class="row">
+                                <div class="col-10"></div>
+                                <div class="col-2">
+                                    <a type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                      </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-center"><img [src]="product.imgProducto.url" class="card-img" alt="..."></p>
+                            <div class="card-body">
+                                <h5 class="card-title" (click)="verProducto(i)">{{product.nombre}}</h5>
+                                <p class="card-text">{{product.descripcion}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
