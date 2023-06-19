@@ -1,0 +1,106 @@
+.card-columns {
+    column-gap: 1.25rem;
+    margin-left: 30px;
+}
+
+.card {
+    box-shadow: 0px 0px 8px rgba(50, 75, 170, 0.34);
+    border-radius: 10px;
+    width: 166px;
+}
+
+.heigth-100 {
+    height: 90vh;
+}
+
+.card-img {
+    width: 146px;
+    height: 99px;
+}
+
+.card-filter {
+    margin-top: 40px;
+    background-color: #E8F3FF;
+    width: 234px;
+    height: 339px;
+}
+
+.card-filter .card-title {
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.btn-filter {
+    background-color: #E8F3FF;
+    border-color: #85B4FF;
+    color: #85B4FF;
+    border-radius: 50px;
+    width: 200px;
+    height: 37px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.btn-Apply {
+    background-color: #061CCD;
+    color: white;
+    border-radius: 50px;
+    width: 200px;
+    height: 37px;
+}
+
+.strong {
+    color: #10249F;
+}
+
+.btn-pagination {
+    border-color: #B3D3FF;
+    color: #B3D3FF;
+    border-radius: 11px;
+    width: 164px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.pr-Title {
+    color: #324BAA;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.card-title {
+    color: #4CABE4;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card-text {
+    color: #0A135C;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.btn-card {
+    border-radius: 10px;
+    color: white;
+    background-color: #10249F;
+}
+
+a svg path {
+    color: #5686FF;
+    fill: currentColor;
+}
+
+a svg path:hover {
+    color: #10249F;
+    fill: currentColor;
+}

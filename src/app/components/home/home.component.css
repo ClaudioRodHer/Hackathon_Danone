@@ -1,0 +1,226 @@
+*{
+    font-size: 10px;
+}
+.slides{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+#barsslide{
+    background-color: #324BAA;
+}
+#anouncement{
+    display:flex;
+    width: 179px;
+    height: 31px;
+    text-align: left;
+    background: #E8F3FF;
+    border-radius: 6px;
+}
+#new{
+    background-color: #11ACED;
+    color: #fff;
+    margin: auto;
+    Padding:2px 7px 2px 7px;
+    border-radius: 5px;
+}
+#newtext{
+    color: #11ACED;
+    margin: auto;
+}
+.descripcionslide{
+    padding: 0 0 145px 134px;
+    display: block;
+    width:60%;
+    height:371px;
+}
+
+#titleslide{
+    
+    color: #324BAA;
+    font-family: 'Bariol',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.9rem;
+    line-height: 8rem;
+    display: flex;
+    align-items: center;
+}
+#descslide{
+   
+    color: #324BAA;
+    font-family: 'Bariol',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    display: flex;
+    align-items: center;
+}
+.button-getstarted{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 7px;
+    gap: 10px;
+    color:#fff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    
+    width: 103px;
+    height: 38px;
+    
+    /* DarkBlue3 */
+    background: #061CCD;
+    border-radius: 11px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;   
+}
+.img-slide{
+    Height:485.26px;
+    Width:572.19px;
+}
+.TrendingProducts{
+    background-image: url("../../../media/homepage/circle-back.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    
+}
+#TrendingProd{
+    font-family: 'Bariol',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 72px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* VioletBlue */
+color: #324BAA;
+
+padding-top: 105px;
+padding-left: 40%;
+}
+
+.tarjeta{
+    display: block;
+}
+.masboton {
+    padding: 10px;
+  }
+.img-mas{
+    width: 14px;
+height: 15px;
+left: 90%;
+position: absolute;;
+}
+.cardimg{
+    padding: 8px 8px 8px 8px;
+    display: inline-block;
+}
+.img-card {
+    display: flex;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+  .card-description {
+    padding: 8px;
+  }
+.titulocard{
+    font-family: 'Bariol',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+/* PictonBlue */
+color: #4CABE4;
+
+
+}
+.carddescription{
+    font-family: 'Bariol';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+display: flex;
+align-items: center;
+
+/* DarkBlue1 */
+color: #0A135C;
+text-align: left;
+
+}
+.cardcalories{
+    font-family: 'Bariol';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+/* VioletBlue */
+color: #324BAA;
+
+
+}
+
+.swiper-wrapper {
+    padding-top: 55px;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+    box-sizing: content-box;
+  }
+.swiper-container {
+    width: 80%;
+    height: 180%;
+    display: flex;
+    padding: 0 0 0 150px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+height: 280px;
+    box-shadow: 0px 0px 8px rgba(50, 75, 170, 0.34);
+    border-radius: 10px;
+    margin-right: 40px;
+  }
+
+  .swiper-slide img {
+    display: flex;
+   
+    object-fit: cover;
+  }
+
+
+
+#beforefooter{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 405px;
+    left: -15px;
+    top: 1185px;
+}
+
