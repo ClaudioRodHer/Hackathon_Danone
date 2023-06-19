@@ -1,1 +1,291 @@
-<p>dailycalories works!</p>
+<div class="container-fluid">
+    <!-- Tarjeta de Calorias -->
+    <div class="cardMaxCalories">
+        <!-- Texto Tarjeta -->
+        <div class="titleCalories">
+            <h2 class="mainTitle">Set your maximum calories limit here!</h2>
+            <h5 class="followQuestions">
+                Answer the following questions in order to have you food information
+            </h5>
+        </div>
+
+        <!-- Chart de Calorias -->
+        <div class="chartCalories">
+            <div class="caloriesRemaining">
+                <h3 class="caloriesNum">892</h3>
+                <h3 class="caloriesText">
+                    Calories <br />
+                    Remaining
+                </h3>
+            </div>
+
+            <!-- Chart Donut -->
+            <div class="donut">
+                <div class="loader"></div>
+                <div class="loader2"></div>
+                <div class="loader3"></div>
+            </div>
+        </div>
+
+        <!--  Comidas -->
+        <div class="comidas">
+            <div class="foods">
+                <div class="dinnerColor"></div>
+                <p class="dinner">Dinner</p>
+            </div>
+            <div class="foods">
+                <div class="breakfastColor"></div>
+                <p class="breakfast">Breakfast</p>
+            </div>
+            <div class="foods">
+                <div class="lunchColor"></div>
+                <p class="lunch">Lunch</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apartado de informacion para agregar alimentos -->
+    <div class="information">
+        <div>
+            <h2 class="titleInformation">Add and update your information</h2>
+        </div>
+        <div class="encabezado1">
+            <h3>Name <strong>v</strong></h3>
+            <h3>Calories v</h3>
+            <h3>Status <strong>v</strong></h3>
+        </div>
+
+        <div class="accordion  accordion-flush" id="accordionExample">
+
+            <!-- BREAKFAST -->
+            <div class="accordion-item">
+                <div class="encabezado2">
+                    <div class="dropdown">
+                        <button class="btn-accordion" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                        <h4 class="accordion-header" id="headingOne">BREAKFAST</h4>
+                    </div>
+                    <h4 class="caloriesTotal">370/520</h4>
+                    <h4 class="progres inProgress">IN PROGRESS</h4>
+                    <p class="options">...</p>
+                </div>
+
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="infoTable">
+                            <table id="myTable">
+                                <thead>
+                                    <tr class="encabezadosTable">
+                                        <th>Produc Name</th>
+                                        <th>Rate</th>
+                                        <th>QTY</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="inputPdtName" type="text" placeholder="Pleaceholder">
+                                        </td>
+                                        <td>
+                                            <input class="inputRateNum" type="number">
+                                            <select name="cantidad" id="cantidad">
+                                                <option value="gramos">g</option>
+                                                <option value="kilogramos">kg</option>
+                                            </select>
+                                        </td>
+                                        <td>10 PCS</td>
+                                        <td>
+                                            <button class="deleteRow" onclick="toggleFilaOculta(this)"> X </button>
+                                        </td>
+                                        <!-- <td>
+                                            <button class="addRow">A</button>
+                                        </td> -->
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="inputPdtName" type="text" placeholder="Pleaceholder">
+                                        </td>
+                                        <td>
+                                            <input class="inputRateNum" type="number">
+                                            <select name="cantidad" id="cantidad">
+                                                <option value="gramos">g</option>
+                                                <option value="kilogramos">kg</option>
+                                            </select>
+                                        </td>
+                                        <td>10 PCS</td>
+                                        <td>
+                                            <button class="deleteRow" onclick="toggleFilaOculta(this)"> X </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LUNCH  -->
+            <div class="accordion-item">
+                <div class="encabezado2">
+                    <div class="dropdown">
+                        <button class="btn-accordion" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"></button>
+                        <h4 class="accordion-header" id="headingTwo">LUNCH</h4>
+                    </div>
+                    <h4 class="caloriesTotal tlunch">370/520</h4>
+                    <h4 class="progres clunch complete">COMPLETE</h4>
+                    <p class="options olunch">...</p>
+                </div>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="infoTable">
+                            <table id="myTable">
+                                <thead>
+                                    <tr class="encabezadosTable">
+                                        <th>Produc Name</th>
+                                        <th>Rate</th>
+                                        <th>QTY</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="inputPdtName" type="text" placeholder="Pleaceholder">
+                                        </td>
+                                        <td>
+                                            <input class="inputRateNum" type="number">
+                                            <select name="cantidad" id="cantidad">
+                                                <option value="gramos">g</option>
+                                                <option value="kilogramos">kg</option>
+                                            </select>
+                                        </td>
+                                        <td>10 PCS</td>
+                                        <td>
+                                            <button class="deleteRow" onclick="toggleFilaOculta(this)"> X </button>
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <!-- <td>
+                                            <button class="addRow">A</button>
+                                        </td> -->
+                                        
+                                    </tr>
+                                    <td>
+                                        <input class="inputPdtName" type="text" placeholder="Pleaceholder">
+                                    </td>
+                                    <td>
+                                        <input class="inputRateNum" type="number">
+                                        <select name="cantidad" id="cantidad">
+                                            <option value="gramos">g</option>
+                                            <option value="kilogramos">kg</option>
+                                        </select>
+                                    </td>
+                                    <td>10 PCS</td>
+                                    <td>
+                                         <button class="deleteRow" onclick="toggleFilaOculta(this)"> X </button>
+                                    </td>
+                                    <!-- <td>
+                                        <button class="addRow">A</button>
+                                    </td> -->
+                                    <td>
+                                       
+                                    </td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DINNER -->
+            <div class="accordion-item">
+                <div class="encabezado2">
+                    <div class="dropdown">
+                        <button class="btn-accordion" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"></button>
+                        <h4 class="accordion-header" id="headingThree">DINNER</h4>
+                    </div>
+                    <h4 class="caloriesTotal tdinner">370/520</h4>
+                    <h4 class="progres pdinner complete">COMPLETE</h4>
+                    <p class="options odinner">...</p>
+                </div>
+
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="infoTable">
+                            <table id="myTable">
+                                <thead>
+                                    <tr class="encabezadosTable">
+                                        <th>Produc Name</th>
+                                        <th>Rate</th>
+                                        <th>QTY</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="inputPdtName" type="text" placeholder="Pleaceholder">
+                                        </td>
+                                        <td>
+                                            <input class="inputRateNum" type="number">
+                                            <select name="cantidad" id="cantidad">
+                                                <option value="gramos">g</option>
+                                                <option value="kilogramos">kg</option>
+                                            </select>
+                                        </td>
+                                        <td>10 PCS</td>
+                                        <td>
+                                             <button class="deleteRow" onclick="toggleFilaOculta(this)"> X </button>
+                                        </td>
+                                        <!-- <td>
+                                            <button class="addRow">A</button>
+                                        </td> -->
+                                        <td>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr class="fila-oculta">
+                                        <td>
+                                            <input class="inputPdtName" type="text" placeholder="Pleaceholder">
+                                        </td>
+                                        <td>
+                                            <input class="inputRateNum" type="number">
+                                            <select name="cantidad" id="cantidad">
+                                                <option value="gramos">g</option>
+                                                <option value="kilogramos">kg</option>
+                                            </select>
+                                        </td>
+                                        <td>10 PCS</td>
+                                        <td>
+                                             <button class="deleteRow" onclick="toggleFilaOculta(this)"> X </button>
+                                        </td>
+                                        <!-- <td>
+                                            <button class="addRow">A</button>
+                                        </td> -->
+                                        <td>
+                                           
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
