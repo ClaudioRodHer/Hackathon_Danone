@@ -1,10 +1,9 @@
 .container-fluid {
     display: flex;
-
 }
 .cardMaxCalories {
     width:35%;
-    height: 750px;
+    height: 850px;
     margin: 50px;
     background-color: #FFFFFF;
     border-radius: 15px;
@@ -23,8 +22,6 @@
     font-weight: 700;
     line-height: 70px;
     text-align: center;
-    
-    /* VioletBlue */
     color: #324BAA;
 }
 .followQuestions {
@@ -33,7 +30,6 @@
     line-height: 31px;
     text-align: center;
     margin: 0 30px;
-    /* VioletBlue */
     color: #324BAA;;
 }
 .caloriesRemaining {
@@ -43,7 +39,6 @@
     justify-content: center;
     flex-direction: column;
 
-    /* circle */
 
 }
 
@@ -51,7 +46,6 @@
     
     font-size: 40px;
     font-weight: 800;
-    /* Text  */
     color: #030229;
 }
 .caloriesText {
@@ -60,7 +54,6 @@
     font-size: 20px;
     font-weight: 400;
 }
-/* Circle de calories */
 .chartCalories {
     display: flex;
     align-items: center;
@@ -109,7 +102,6 @@
 }
 
 
-/* Checkbox */
 .comidas {
     margin: auto;
     margin-top: 100px;
@@ -153,7 +145,6 @@
     border-radius: 5px;
 }
 
-/* Style de tabla de informacion de comidas*/
 
 .information {
     display: flex;
@@ -167,7 +158,6 @@
     text-align: center;
     font-size: 45px;
 
-   /* VioletBlue */
     color: #324BAA;
 }
 .accordion-item {
