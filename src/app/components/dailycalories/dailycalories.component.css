@@ -1,11 +1,11 @@
-.container {
+.container-fluid {
     display: flex;
-    margin: 50px;
 
 }
 .cardMaxCalories {
-    width: 40%;
+    width:35%;
     height: 750px;
+    margin: 50px;
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 15px 9px 15px -3px rgba(0,0,0,0.1),-17px 20px 15px -3px rgba(0,0,0,0.1),-13px -9px 15px -3px rgba(0,0,0,0.1); 
@@ -15,24 +15,24 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 45px;
+    margin: 36px;
     gap: 10px;
 }
 .mainTitle {
-    font-size: 46px;
-    font-weight: bolder;
-    line-height: 60px;
+    font-size: 67px;
+    font-weight: 700;
+    line-height: 70px;
     text-align: center;
     
     /* VioletBlue */
     color: #324BAA;
 }
 .followQuestions {
-    font-size: 22px;
-    font-weight: lighter;
+    font-size: 25px;
+    font-weight: 400;
     line-height: 31px;
     text-align: center;
-    padding: 10px;
+    margin: 0 30px;
     /* VioletBlue */
     color: #324BAA;;
 }
@@ -153,16 +153,169 @@
     border-radius: 5px;
 }
 
-/* Style del apartado style */
+/* Style de tabla de informacion de comidas*/
 
 .information {
     display: flex;
     flex-direction: column;
-    width: 60%;
-   padding: 50px;
+    width: 65%;
+    padding: 50px 90px;
 
 }
 .titleInformation {
+    margin-top: 60px;
     text-align: center;
-    margin-top: 15px;
+    font-size: 45px;
+
+   /* VioletBlue */
+    color: #324BAA;
+}
+.accordion-item {
+    border-color: transparent;
+}
+.encabezado1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+    .encabezado1 h3{
+        font-size: 13px;
+        
+    }
+
+.encabezado2 {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 17px 44px rgba(3, 2, 41, 0.07);
+    background-color: #FFFFff;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+    .encabezado2 h4 {
+        font-size: 15px;
+    }
+.caloriesTotal {
+    margin-left: 225px;
+}
+.progres {
+    margin-left: 245px;
+}
+    .inProgress {
+        color: #FFB400;
+        padding: 4px 10px;
+        background: rgba(255, 180, 0, 0.13);
+        border-radius: 11px;
+    }
+    .complete {
+        color: #419601;
+        padding: 4px 10px;
+        background: rgba(86, 202, 0, 0.13);
+        border-radius: 11px;
+    }
+.options {
+    margin-left: 160px;
+    font-size:30px;
+    transform: rotate(-90deg);
+}
+    .tlunch {
+        margin-left: 255px;
+    }
+    .olunch, 
+    .odinner{
+        margin-left: 180px;
+    }
+    .tdinner {
+        margin-left: 250px;
+    }
+
+
+.infoTable {
+    display: flex;
+}
+#myTable {
+    width: 100%;
+    margin-left: 80px;
+    padding: 50px;
+    box-shadow: 1px 17px 44px rgba(3, 2, 41, 0.07);
+}
+thead,td,tr {
+    text-align: center;
+    
+}
+th,td {
+    padding: 20px;
+}
+
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+.btn-accordion {
+    width: 10px;
+    height: 15px;
+    border-radius: 50px;
+    border: 3px solid #5686FF;
+    background-color: transparent;
+    box-shadow: 0px 3px 5px 0px #8b8789;
+    margin: 0 30px;
+}
+
+.accordion-header {
+    margin: 0pc 30px;
+}
+
+
+.inputPdtName {
+    width: 121px;
+    height: 35px;
+    background: #F7F7F8;
+    border-color: transparent;
+    border-radius: 5px; 
+    text-align: center;
+    outline: none
+}
+
+.inputRateNum  {
+    width: 35px;
+    height: 35px;
+    background: #EAEDF3;
+    border-color: transparent;
+    border-radius: 5px; 
+    text-align: center;
+    outline: none
+}
+#cantidad  {
+    margin-left: 5px;
+    padding: 5px;
+    width: 50px;
+    background: #EAEDF3;
+    border-color: transparent;
+    border-radius: 5px; 
+    text-align: center;
+    outline: none
+}
+.deleteRow {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-color: transparent;
+    background-color: #E71D3640;
+    color: red;
+    font-weight: bolder;
+    line-height: 10px;
+    border-radius: 25px;
+}
+.addRow {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-color: transparent;
+    background-color: #55d44a40;
+    color: green;
+    font-weight: bolder;
+    line-height: 10px;
+    border-radius: 25px;
+
 }
